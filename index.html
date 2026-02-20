@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout loja</title>
+</head>
+
+<body>
+    <header>
+        <a href="/">SafeCheckout</a>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Checkout</h2>
+            <p>Shipping Information</p>
+            <label for="Delivery">
+                <input type="radio" id="Delivery" name="delivery" value="Delivery">
+                <i class="ti ti-truck-delivery"></i>
+                Delivery
+            </label>
+            <label for="Pick up">
+                <input type="radio" id="Pick up" name="pick up" value="Pick up">
+                <i class="ti ti-package"></i>
+                Pick up
+            </label>
+            <hr>
+            <form>
+                <label for="name">Full name</label><br>
+                <input type="text" id="name" name="name" value="" placeholder="Enter full name"><br>
+                <label for="Email">Email address</label><br>
+                <input type="text" id="Email" name="email" value="" placeholder="Enter email address"><br>
+                <label for="number">Phone number</label><br>
+                <div>
+                    <select>
+                        <option value="Estados Unidos">🇺🇸</option>
+                        <option value="Brasil">🇧🇷</option>
+                    </select>
+                    <input type="text" id="number" name="Phone" value="Enter phone number">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
