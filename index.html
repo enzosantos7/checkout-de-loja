@@ -8,25 +8,56 @@
 </head>
 
 <body>
+
+
+    <!-- header -->
     <header>
         <a href="/">SafeCheckout</a>
     </header>
+    <!-- header -->
+
+
     <hr>
+
+
+    <!-- main -->
     <main>
+
+
+        <!-- left container -->
         <section>
+
+
+            <!-- left container title -->
             <h2>Checkout</h2>
+            <!-- left container title -->
+
+
+            <!-- left container subtitle -->
             <p>Shipping Information</p>
-            <label for="Delivery">
-                <input type="radio" id="Delivery" name="delivery" value="Delivery">
-                <i class="ti ti-truck-delivery"></i>
-                Delivery
-            </label>
-            <label for="Pick up">
-                <input type="radio" id="Pick up" name="pick up" value="Pick up">
-                <i class="ti ti-package"></i>
-                Pick up
-            </label>
+            <!-- left container subtitle -->
+
+
+            <!-- delivery methods -->
+            <div>
+                <label for="Delivery">
+                    <input type="radio" id="Delivery" name="delivery" value="Delivery">
+                    <i class="ti ti-truck-delivery"></i>
+                    Delivery
+                </label>
+                <label for="Pick up">
+                    <input type="radio" id="Pick up" name="pick up" value="Pick up">
+                    <i class="ti ti-package"></i>
+                    Pick up
+                </label>
+            </div>
+            <!-- delivery methods -->
+
+
             <hr>
+
+
+            <!-- registration form -->
             <form>
                 <label for="name">Full name</label><br>
                 <input type="text" id="name" name="name" value="" placeholder="Enter full name"><br>
@@ -40,13 +71,22 @@
                     </select>
                     <input type="text" id="number" name="Phone" value="" placeholder="Enter phone number">
                 </div>
+
+
+                <!-- registration country -->
                 <label for="Country">Country</label><br>
                 <select>
                     <option value="" disabled selected>Choose country</option>
                     <option value="Estados Unidos">Estados Unidos</option>
                     <option value="Brasil">Brasil</option>
                 </select>
+                <!-- registration country -->
+
+
                 <br>
+
+
+                <!-- registration state -->
                 <label for="City">City</label><br>
                 <input type="text" id="city" name="City" placeholder="Enter city">
                 <label for="State">State</label>
@@ -55,11 +95,29 @@
                 <input type="text" id="ZIP" name="Code" placeholder="Enter ZIP code">
                 <input type="checkbox" id="Terms" name="Conditions">
                 <label for="Terms">I have read and agree to the Terms and Conditions</label>
+                <!-- registration state -->
+
+
             </form>
+            <!-- registration form -->
+
+
         </section>
+        <!-- left container -->
+
+
         <hr>
+
+
+        <!-- right container -->
         <section>
+
+            <!-- right container title -->
             <p>Review your cart</p>
+            <!-- right container title -->
+
+
+            <!-- product image -->
             <div>
                 <img src="" alt="">
                 <p>DuoComfort Sofa Premium</p>
@@ -72,11 +130,64 @@
                 <p>1x</p>
                 <p>$25,00</p>
             </div>
-            <div>
+            <!-- product image -->
 
+
+            <!-- discount button -->
+            <div>
+                <i class="ti ti-rosette-discount"></i>
+                <input type="text" id="Discount" name="code" placeholder="Discount code">
+                <button onclick="alert ('Discount Successfully Applied.')">Apply</button>
             </div>
+            <!-- discount button -->
+
+
+            <!-- item discount -->
+            <div>
+                <span>Subtotal</span>
+                <span>$45.00</span>
+            </div>
+            <div>
+                <span>Shipping</span>
+                <span>$5.00</span>
+            </div>
+            <div>
+                <span>Discount</span>
+                <span>-$10.00</span>
+            </div>
+            <div>
+                <span>Total</span>
+                <span>$40.00</span>
+            </div>
+            <!-- item discount -->
+
+
+            <!-- payment button -->
+            <div>
+                <button onclick="alert('The Payment was Successful.')">Pay Now</button>
+            </div>
+            <!-- payment button -->
+
+
+            <!-- security data -->
+            <div>
+                <div>
+                    <i class="ti ti-lock"></i>
+                    <p>Secure Checkout - SSL Encrypted</p>
+                </div>
+                <p>Ensuring your financial and personal details are secure during every transaction.</p>
+            </div>
+            <!-- security data -->
+
+
         </section>
+        <!-- right container -->
+
+
     </main>
+    <!-- main -->
+
+
 </body>
 
 </html>
